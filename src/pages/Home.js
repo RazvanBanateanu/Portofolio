@@ -15,8 +15,8 @@ const Home = () => {
                          new technologies, staying up-to-date with industry trends, and seeking out opportunities to learn and improve, I strive to be at the forefront of innovation.</p>
 
                     <div className="btn-box">
-                        <Link to="Portofolio/contact" className="link"><button>Hire Me</button></Link>
-                        <Link to="Portofolio/contact" className="link"><button>Let's Talk</button></Link>
+                        <Link to="contact" className="link"><button>Hire Me</button></Link>
+                        <Link to="contact" className="link"><button>Let's Talk</button></Link>
                     </div>
                 </div>
 
