@@ -1,0 +1,68 @@
+.contact{
+    min-height: auto;
+    padding: 7rem;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+}
+
+.contact{
+    max-width: 70rem;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact .input-box .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+
+
+.contact .input-box .input-field input,
+.contact .text-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: var(--text-color);
+    background: transparent;
+    border-radius: .6rem;
+    border: .2rem solid var(--main-color);
+}
+
+.contact .input-box .input-field input::placeholder,
+.contact .text-field textarea::placeholder{
+    color: var(--text-color);
+}
+
+.contact .text-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+}
+
+.contact .text-field textarea{
+    resize: none;
+}
+
+.contact .btn-box.btns{
+    display:block;
+    width: 100%;
+}
+
+.contact button{
+    cursor: pointer;
+}
+
+.contact input::-webkit-outer-spin-button,
+.contact input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}

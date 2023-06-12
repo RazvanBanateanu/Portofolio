@@ -1,0 +1,60 @@
+.skills{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-grow: inherit;
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+    gap: 2rem;
+    background: var(--second-bg-color);
+    padding-bottom: 6rem;
+    gap: 4rem;
+    overflow: hidden;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.skills > div {
+    
+  animation: moveItem 5s linear infinite alternate;
+  transform-style: preserve-3d;
+  transform: translateZ(0);
+  }
+  
+.skills > div:hover {
+  animation-play-state: paused;
+}
+
+.skills > div:nth-child(even) {
+  animation: moveItemReverse 5s linear infinite alternate;
+}
+
+.skills > div:nth-child(even):hover {
+  animation-play-state: paused;
+}
+
+@keyframes moveItem {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(20px, 20px, 20px); /* Adjust the translation values as needed */
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+@keyframes moveItemReverse {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(-20px, -20px, -20px); /* Reverse the translation values */
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
