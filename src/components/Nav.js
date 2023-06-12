@@ -28,7 +28,7 @@ const Nav = () => {
           <li><Link to="contact" className="link" onClick={handleOnClickMenu}>Contact</Link></li>
       </ul>
     </nav>
-
+    <div className="container"></div>
     <Outlet />
   </>
   );

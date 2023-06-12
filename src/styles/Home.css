@@ -3,6 +3,7 @@
     padding: 10rem 9% 2rem;
     display: flex;
     align-items: center;
+    flex-direction: row-reverse;
     padding: 0 9%;
 }
 
@@ -237,74 +238,19 @@
     }
 }
 
-@media(max-width: 700px){
-    .home{
-        flex-direction: column-reverse;
-        padding: 0rem 0% 7rem;
-    }
-    
-    .home-content{
-        max-width: 100%;
-    }
-    
-    .home-content h1{
-        font-size: 3rem;
-    }
-    
-    .home-content .text-animated{
-        position: relative;
-        width: 45rem;
-        margin-right: 0rem;
-    }
-    
-    .home-content .text-animated h3{
-        font-size: 3.2rem;
-        font-weight: 700;
-        color: transparent;
-        -webkit-text-stroke: .8px var(--main-color);
-    }
-    
-    .home-content p{
-        text-align: justify;
-        font-size: 1.6rem;
-        margin: 2rem 0 0rem;
-    }
-
-    .profile{
-        width: 30rem;
-        height: 30rem;
-        margin-left: 0rem;
-        
-    }
-    
-    .profile img{
-        width:100%;   
-    }
-
-    .btn-box{
-        margin: 10px 0;
-        width: 27rem;
-        height: 4rem;
-    }
-
-    .btn-box button{
-        width: 12rem;
-        font-size: 17px;
-    }
-    .home-icons{
-        bottom: 2rem;
-    }
-    
-}
-
 @media(max-width: 720px){
     .home{
-        flex-direction: column-reverse;
-        padding: 0 0 8rem;
+        flex-direction: column;
+        margin-bottom: 0;
+        padding: 0;
+        padding-bottom: 0;
+        gap: 0px;
     }
     
     .home-content{
         max-width: 100%;
+        margin: 0;
+        padding: 0;
     }
     
     .home-content h1{
@@ -314,10 +260,14 @@
     .home-content .text-animated{
         position: relative;
         width: 30.1rem;
+        margin-right: 0rem;
     }
     
     .home-content .text-animated h3{
         font-size: 2.2rem;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke: .8px var(--main-color);
     }
     
     .home-content p{
@@ -329,6 +279,7 @@
     .btn-box{
         width: 19rem;
         height: 3rem;
+        margin: 10px 0;
     }
     
     .btn-box button{
@@ -339,6 +290,7 @@
     .home-icons{
         position: relative;
         width: 100px;
+        bottom: 2rem;
     }
     
     .home-icons a{
@@ -348,10 +300,18 @@
     }
 
     .profile{
+        margin-left: 0;
+        height: 100%;
+        margin-top: 10%;
+    }
+
+    .profile img{
         position: relative;
         width: 23rem;
         height: 25rem;
-        margin-top: 3rem;
+        margin-top: 0rem;
+        margin-left: 0rem;
+        
     }
 
 }

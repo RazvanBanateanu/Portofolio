@@ -6,6 +6,12 @@ import { Link } from 'react-router-dom';
 const Home = () => {
     return(
         <div className="home">
+
+            
+            <div className="profile">
+                <img src="assets\profile.jpg" alt="Profile" className="profile-img"/>
+            </div>
+
             <div className="home-content">
                 <h1>Hi, I'm <span>Banateanu Razvan</span></h1> 
                 <div className="text-animated">
@@ -26,9 +32,6 @@ const Home = () => {
                 </div>
             </div>
 
-            <div className="profile">
-                <img src="assets\profile.jpg" alt="Profile"/>
-            </div>
         </div>
     );
 };

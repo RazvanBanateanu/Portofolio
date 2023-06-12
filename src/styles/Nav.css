@@ -43,6 +43,10 @@
     display: none;
   }
 
+  .container {
+    padding-top: 80px;
+  }
+
   @media(max-width:720px){
     .nav{
       background: var(--bg-color);
@@ -53,6 +57,7 @@
     }
 
     .navbar{
+      display: none;
       position: absolute;
       flex-direction: column;
       top: 100%;
