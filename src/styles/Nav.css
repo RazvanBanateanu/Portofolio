@@ -35,3 +35,45 @@
   .link:hover{
     color: var(--main-color);
   }
+
+  #menu-icon{
+    font-size: 3.6rem;
+    color: var(--text-color);
+    cursor: pointer;
+    display: none;
+  }
+
+  @media(max-width:720px){
+    .nav{
+      background: var(--bg-color);
+    }
+
+    #menu-icon{
+      display: block;
+    }
+
+    .navbar{
+      position: absolute;
+      flex-direction: column;
+      top: 100%;
+      left: -100%;
+      width: 100%;
+      padding: 0rem 6%;
+      background: var(--bg-color);
+      box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+      gap:13px;
+      transition: .25s ease;
+      transition-delay: .25s;
+    }
+
+    .navbar.open{
+      display: flex;
+      transition-delay: 0s;
+      left: 0;
+    }
+
+    .link{
+      display: block;
+      font-size: 2rem;
+    }
+  }

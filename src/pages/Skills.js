@@ -1,23 +1,25 @@
 import React from "react";
 import '../styles/Skills.css';
 
+const windowWidth = window.innerWidth;
+
 const data = [
-    { value: 'Rust', count: 5 },
-    { value: 'Java', count: 7 },
-    { value: 'C++', count: 7 },
-    { value: 'Python', count: 10 },
-    { value: 'JavaScript', count: 10 },
-    { value: 'React', count: 9 },
+    { value: 'Rust', count: 4 },
+    { value: 'Java', count: 6 },
+    { value: 'C++', count: 6 },
+    { value: 'Python', count: 8 },
+    { value: 'JavaScript', count: 8 },
+    { value: 'React', count: 7 },
     { value: 'Node.js', count: 5 },
-    { value: 'HTML5', count: 8 },
-    { value: 'CSS3', count: 8 },
+    { value: 'HTML5', count: 7 },
+    { value: 'CSS3', count: 7 },
     { value: 'MySql', count: 3 },
     { value: 'MySql', count: 4 },
     { value: 'Linux', count: 6 },
-    { value: 'Git', count: 8 },
-    { value: 'Machine Learning', count: 9 },
-    { value: 'Unity', count: 6 },
-    { value: 'Blockchain', count: 4 },
+    { value: 'Git', count: 7 },
+    { value: 'Machine Learning', count: 6 },
+    { value: 'Unity', count: 4 },
+    { value: 'Blockchain', count: 3 },
     { value: 'PHP', count: 4 },
   ]
 
@@ -47,13 +49,23 @@ const shuffleArray = (array) => {
 
   const shuffledData = shuffleArray(data);
 
+  const getFontSize = (count) => {
+    if (windowWidth > 1200) {
+        return `${count / 1.5}rem`;
+    } else if (windowWidth > 800) {
+        return `${count / 2}rem`;
+    } else {
+        return `${count / 3}rem`;
+    }
+};
+
 const Skills = () => {
     return(
         <div className="skills">
             {shuffledData.map((item, index) => (
             <div 
             key={index} 
-            style={{ fontSize: `${item.count/1.5}rem`, color: getRandomColor(), }} 
+            style={{ fontSize: getFontSize(item.count), color: getRandomColor(), }} 
             >
                 {item.value} 
             </div>

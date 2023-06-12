@@ -8,7 +8,7 @@
     padding: 0 9%;
     gap: 2rem;
     background:var(--second-bg-color);
-    padding-bottom: 6rem;
+    overflow: hidden;
 }
 
 .heading{
@@ -75,3 +75,35 @@ span{
       transform: translate(-50%, -50%) rotate(360deg); /* Rotate the circle by 360 degrees */
     }
   }
+
+
+
+@media(max-width: 1150px){
+    .heading{
+        font-size: 4rem;
+        margin-top: 6rem;
+        margin-bottom: 1.5rem;
+    }
+
+}
+
+@media(max-width: 720px){
+    .about-content p{
+        font-size: 1.66rem;
+        margin: 2rem 0 3rem;
+        text-align: justify;
+    }
+
+    .about-img{
+        width: 20rem;
+        height: 20rem;
+    }
+
+    .heading{
+        margin-top: 0;
+        font-size: 4rem;
+        margin-bottom: 0rem;
+        text-align: center;
+    }
+
+}
