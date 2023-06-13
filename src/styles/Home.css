@@ -1,10 +1,13 @@
+.home-container{
+    display: block;
+    height: 100vh;
+    overflow: hidden;
+}
 .home{
-    min-height: 100vh;
-    padding: 10rem 9% 2rem;
     display: flex;
     align-items: center;
     flex-direction: row-reverse;
-    padding: 0 9%;
+    padding: 3% 9%;
 }
 
 .home-content{
@@ -245,6 +248,7 @@
         padding: 0;
         padding-bottom: 0;
         gap: 0px;
+        margin-top: 6rem;
     }
     
     .home-content{

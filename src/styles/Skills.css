@@ -1,10 +1,13 @@
+.skills-container{
+  display: block;
+  height: 100vh;
+}
+
 .skills{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    flex-grow: inherit;
-    min-height: 100vh;
     padding: 10rem 9% 2rem;
     gap: 2rem;
     background: var(--second-bg-color);
@@ -13,8 +16,11 @@
     overflow: hidden;
     perspective: 1000px;
     cursor: pointer;
+    height: 90%;
 }
-
+.space{
+  height: 10%;
+}
 .skills > div {
     
   animation: moveItem 5s linear infinite alternate;
@@ -62,6 +68,6 @@
 
 @media(max-width:720px) {
   .skills{
-    padding: 5rem 6% 10rem;
+    padding: 1rem 5% 6rem;
   }
 }

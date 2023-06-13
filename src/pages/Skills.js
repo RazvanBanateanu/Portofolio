@@ -55,13 +55,15 @@ const shuffleArray = (array) => {
     } else if (windowWidth > 800) {
         return `${count / 2}rem`;
     } else {
-        return `${count / 3}rem`;
+        return `${count / 3.5}rem`;
     }
 };
 
 const Skills = () => {
     return(
-        <div className="skills">
+        <div className="skills-container">
+          <div className="space"></div>
+          <div className="skills">
             {shuffledData.map((item, index) => (
             <div 
             key={index} 
@@ -70,6 +72,7 @@ const Skills = () => {
                 {item.value} 
             </div>
             ))}
+          </div>
         </div>
     );
 };

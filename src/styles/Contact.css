@@ -11,6 +11,10 @@
     text-align: center;
 }
 
+.contact .heading{
+    margin-top: 1rem;
+}
+
 .contact .input-box{
     position: relative;
     display: flex;

@@ -43,9 +43,6 @@
     display: none;
   }
 
-  .container {
-    padding-top: 80px;
-  }
 
   @media(max-width:720px){
     .nav{
