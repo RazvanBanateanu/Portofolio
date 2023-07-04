@@ -15,7 +15,7 @@
 }
 
 .heading{
-    font-size: 5rem;
+    font-size: 7rem;
     margin-bottom: 2rem;
     text-align: center;
     margin-top: 8rem;
@@ -27,12 +27,13 @@ span{
 
 .about-img{
     position: relative;
-    width: 25rem;
-    height: 25rem;
+    width: 45rem;
+    height: 45rem;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 2%;
 }
 
 .about-img img{
@@ -63,11 +64,11 @@ span{
 }
 
 .about-content h3{
-    font-size: 2.6rem;
+    font-size: 3.6rem;
 }
 
 .about-content p{
-    font-size: 1.6rem;
+    font-size: 2.6rem;
     margin: 2rem 0 3rem;
 }
 
@@ -80,7 +81,80 @@ span{
     }
   }
 
-
+@media(max-width:1500px){
+    .about-container{
+        display: block;
+        width: 100%;
+        height: 100vh;
+    }
+    
+    .about{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 9%;
+        background:var(--second-bg-color);
+        overflow: hidden;
+        height: 100%;
+    }
+    
+    .heading{
+        font-size: 5rem;
+        margin-bottom: 2rem;
+        text-align: center;
+        margin-top: 8rem;
+    }
+    
+    span{
+        color: var(--main-color);
+    }
+    
+    .about-img{
+        position: relative;
+        width: 25rem;
+        height: 25rem;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .about-img img{
+        width: 90%;
+        border-radius: 50%;
+        border: .2rem solid var(--main-color);
+    }
+    
+    
+    .about-img .circle-spin{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0);
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+        border-top: .2rem solid var(--second-bg-color);
+        border-bottom: .2rem solid var(--second-bg-color);
+        border-left: .2rem solid var(--main-color);
+        border-right: .2rem solid var(--main-color);
+        animation: spin 3s linear infinite;
+    }
+    
+    
+    .about-content{
+        text-align: center;
+    }
+    
+    .about-content h3{
+        font-size: 2.6rem;
+    }
+    
+    .about-content p{
+        font-size: 1.6rem;
+        margin: 2rem 0 3rem;
+    }
+}
 
 @media(max-width: 1150px){
     .heading{

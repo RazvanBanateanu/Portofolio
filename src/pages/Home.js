@@ -11,6 +11,10 @@ const Home = () => {
                     <img src="assets\profile.jpg" alt="Profile" className="profile-img"/>
                 </div>
 
+                {/* <div className="about-img">
+                    <img src="assets\profile.jpg" alt="Profile"/>
+                </div> */}
+
                 <div className="home-content">
                     <h1>Hi, I'm <span>Banateanu Razvan</span></h1> 
                     <div className="text-animated">
